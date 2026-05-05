@@ -1,24 +1,50 @@
 import { motion } from 'framer-motion';
 
 const Certificates = () => {
+  // Images expected to live in `src/assets/certs/`.
+  // Add logos named: aws.png, freecodecamp.png, udemy.png, microsoft.png, azure.png, csharp.png
   const certs = [
     {
       title: "AWS Academy Cloud Foundations",
       platform: "AWS Academy",
-      year: "2023",
-      skill: "Cloud Computing"
+      year: "2025",
+      skill: "Cloud Computing",
+      image: "/certs/aws.svg"
     },
     {
       title: "Responsive Web Design",
       platform: "freeCodeCamp",
-      year: "2022",
-      skill: "Frontend Development"
+      year: "2025",
+      skill: "Frontend Development",
+      image: "/certs/freecodecamp.svg"
     },
     {
       title: "MERN Stack Crash Course",
       platform: "Udemy",
-      year: "2023",
-      skill: "Full-Stack Development"
+      year: "2025",
+      skill: "Full-Stack Development",
+      image: "/certs/udemy.svg"
+    },
+    {
+      title: "Build a mobile-optimized app from Power Apps",
+      platform: "Microsoft Learn",
+      year: "2026",
+      skill: "Power Apps",
+      image: "/certs/microsoft.svg"
+    },
+    {
+      title: "Explore relational database services in Azure",
+      platform: "Microsoft Learn",
+      year: "2025",
+      skill: "Azure Cloud",
+      image: "/certs/azure.svg"
+    },
+    {
+      title: "Create C# methods that return values",
+      platform: "Microsoft Learn",
+      year: "2025",
+      skill: "C# Programming",
+      image: "/certs/csharp.svg"
     }
   ];
 
@@ -44,12 +70,13 @@ const Certificates = () => {
             key={index} 
             className="glass-card overflow-hidden group"
           >
-            <div className="h-48 bg-slate-800 relative overflow-hidden">
+            <div className="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center p-4">
               <div className="absolute inset-0 bg-accentCyan/20 group-hover:bg-transparent transition-colors duration-500 z-10 mix-blend-multiply"></div>
-              <img 
-                src={`https://via.placeholder.com/600x400/0f172a/94a3b8?text=Certificate`} 
-                alt={cert.title} 
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+              <img
+                src={cert.image || `https://via.placeholder.com/600x400/0f172a/94a3b8?text=Certificate`}
+                alt={cert.title}
+                onError={(e) => { e.currentTarget.src = `https://via.placeholder.com/600x400/0f172a/94a3b8?text=Certificate`; }}
+                className="max-h-28 w-auto object-contain transition-all duration-700 group-hover:scale-105 z-20"
               />
             </div>
             <div className="p-8">

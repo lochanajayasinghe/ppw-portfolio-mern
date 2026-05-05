@@ -85,6 +85,14 @@ const Hero = () => {
           >
             <GithubIcon size={18} className="text-accentPurple" /> GitHub
           </a>
+          <a
+            href="https://www.linkedin.com/in/lochana-jayasinghe-a28674319/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700 hover:border-accentPurple text-white px-8 py-4 rounded-full font-medium transition-all duration-300 hover:-translate-y-1"
+          >
+             LinkedIn
+          </a>
         </motion.div>
       </motion.div>
     </section>

@@ -15,7 +15,7 @@ const Skills = () => {
     {
       title: "Database Management",
       skills: ["MongoDB", "SQL", "Mongoose"],
-      icon: "s🗄️"
+      icon: "🗄️"
     },
     {
       title: "Tools & Technologies",

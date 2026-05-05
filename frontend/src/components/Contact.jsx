@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, MapPin, Linkedin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
@@ -95,16 +95,6 @@ const Contact = () => {
               <div>
                 <h4 className="font-outfit font-bold text-white text-lg">Email</h4>
                 <p className="text-sm">lochanajayasinghe2002@gmail.com</p>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-5 text-lightGrey group">
-              <div className="bg-slate-800 p-4 rounded-full text-accentCyan group-hover:bg-accentCyan group-hover:text-white transition-colors duration-300 shadow-lg">
-                <Linkedin size={24} />
-              </div>
-              <div>
-                <h4 className="font-outfit font-bold text-white text-lg">LinkedIn</h4>
-                <p className="text-sm"><a href="https://www.linkedin.com/in/lochana-jayasinghe-a28674319/" target="_blank" rel="noopener noreferrer" className="text-lightGrey hover:text-accentCyan">lochana-jayasinghe-a28674319</a></p>
               </div>
             </div>
           </div>

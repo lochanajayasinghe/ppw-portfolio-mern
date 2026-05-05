@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profileImg from '../assets/profile.jpeg';
 
 const About = () => {
   return (
@@ -50,9 +51,9 @@ const About = () => {
           
           <div className="bg-slate-800 aspect-square rounded-2xl overflow-hidden relative shadow-2xl">
             <div className="absolute inset-0 bg-transparent group-hover:bg-accentCyan/10 transition-colors duration-500 z-10 mix-blend-overlay"></div>
-            <img 
-              src="/profile.jpg" 
-              alt="Shasini Lochana" 
+            <img
+              src={profileImg}
+              alt="Shasini Lochana"
               className="object-cover w-full h-full transition-all duration-500 scale-105 group-hover:scale-100"
             />
           </div>

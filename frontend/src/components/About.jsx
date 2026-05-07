@@ -33,6 +33,9 @@ const About = () => {
             the MERN stack, and modern application development methodologies.
           </p>
           <p>
+            SLIIT Registration Number: IT22555526
+          </p>
+          <p>
             Through my academic journey, especially the Preparation for Professional World (PPW) module, 
             I have honed not only my technical skills but also my professional communication, 
             problem solving, and teamwork abilities, preparing me for a successful career in the tech industry.

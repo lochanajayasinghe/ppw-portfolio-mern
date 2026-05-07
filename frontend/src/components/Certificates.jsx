@@ -9,42 +9,42 @@ const Certificates = () => {
       platform: "AWS Academy",
       year: "2025",
       skill: "Cloud Computing",
-      image: "/certs/aws.svg"
+      image: "/certs/aws.jpg"
     },
     {
-      title: "Responsive Web Design",
+      title: "Foundational C# with Microsoft",
       platform: "freeCodeCamp",
       year: "2025",
       skill: "Frontend Development",
-      image: "/certs/freecodecamp.svg"
+      image: "/certs/foundational-csharp.png"
     },
     {
-      title: "MERN Stack Crash Course",
+      title: "Oracle SQL - A Complete Introduction",
       platform: "Udemy",
       year: "2025",
       skill: "Full-Stack Development",
-      image: "/certs/udemy.svg"
+      image: "/certs/oracle-sql-complete-introduction.png"
     },
     {
-      title: "Build a mobile-optimized app from Power Apps",
+      title: "Create a canvas app in Power Apps",
       platform: "Microsoft Learn",
       year: "2026",
       skill: "Power Apps",
-      image: "/certs/microsoft.svg"
+      image: "/certs/create-canvas-app-power-apps.png"
     },
     {
-      title: "Explore relational database services in Azure",
+      title: "Create and run simple C# console applications",
       platform: "Microsoft Learn",
       year: "2025",
       skill: "Azure Cloud",
-      image: "/certs/azure.svg"
+      image: "/certs/create-and-run-simple-csharp.png"
     },
     {
-      title: "Create C# methods that return values",
+      title: "Debug C# console applications",
       platform: "Microsoft Learn",
       year: "2025",
       skill: "C# Programming",
-      image: "/certs/csharp.svg"
+      image: "/certs/debug-csharp-console-applications.png"
     }
   ];
 
@@ -70,13 +70,13 @@ const Certificates = () => {
             key={index} 
             className="glass-card overflow-hidden group"
           >
-            <div className="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center p-4">
+            <div className="h-48 bg-slate-800 relative overflow-hidden flex items-start justify-center p-4">
               <div className="absolute inset-0 bg-accentCyan/20 group-hover:bg-transparent transition-colors duration-500 z-10 mix-blend-multiply"></div>
               <img
-                src={cert.image || `https://via.placeholder.com/600x400/0f172a/94a3b8?text=Certificate`}
+                src={cert.image ? encodeURI(cert.image) : `https://via.placeholder.com/600x400/0f172a/94a3b8?text=Certificate`}
                 alt={cert.title}
                 onError={(e) => { e.currentTarget.src = `https://via.placeholder.com/600x400/0f172a/94a3b8?text=Certificate`; }}
-                className="max-h-28 w-auto object-contain transition-all duration-700 group-hover:scale-105 z-20"
+                className="max-h-40 w-auto object-contain transition-all duration-700 group-hover:scale-105 z-20"
               />
             </div>
             <div className="p-8">
